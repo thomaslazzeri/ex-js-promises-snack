@@ -22,6 +22,7 @@ const creaLanciaDado = () => {
             console.log('Sto lanciando il dado...');
             setTimeout(() => {
                 if (Math.random() < 0.2) {
+                    ultimoLancio = 0;
                     reject('Il dado si è incastrato');
                 } else {
                     let numero = (Math.floor(Math.random() * 6) + 1);
